@@ -50,6 +50,26 @@ public class MainActivity extends AppCompatActivity {
             res.setText(String.valueOf(resultado));
 
         }
+        public void calcularPotencia(View view){
+            int num = Integer.parseInt(num1.getText().toString());
+            int elevacion = Integer.parseInt(num2.getText().toString());
+
+            long resultado = 0;
+
+            try {
+                resultado = Potencia.potencia(num,elevacion);
+
+                System.out.println("OK 5^5 => " + resultado);
+
+            } catch (Exception e) {
+
+                System.out.println("exception => " + e.getMessage());
+                res.setText(e.getMessage());
+                return;
+            }
+
+            res.setText(String.valueOf(resultado));
+        }
 
         private int calcularfactorial(int n) {
             if (n == 0) {

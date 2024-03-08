@@ -11,217 +11,204 @@
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="508dp"
         android:ems="10"
         android:hint="Digita numero"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <EditText
         android:id="@+id/num2"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="44dp"
         android:ems="10"
         android:hint="Digita numero"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="160dp"
         android:layout_height="42dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="101dp"
         android:text="CALCULADORA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <Button
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="249dp"
         android:onClick="sumar"
         android:text="Sumar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintEnd_toStartOf="@+id/Restar"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/Restar"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="44dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="180dp"
         android:onClick="restar"
         android:text="Restar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintTop_toBottomOf="@+id/num2"
+        app:layout_constraintVertical_bias="0.042" />
 
     <Button
         android:id="@+id/dividir"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="219dp"
-        android:layout_marginEnd="102dp"
         android:onClick="dividir"
         android:text="Dividir"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/Restar"
+        app:layout_constraintVertical_bias="0.03" />
 
     <Button
         android:id="@+id/multi"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="246dp"
         android:onClick="multiplicar"
         android:text="Multiplicar"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dividir"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.028" />
 
     <EditText
         android:id="@+id/num3"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="158dp"
         android:ems="10"
         android:hint="Numero Factorial"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintTop_toBottomOf="@+id/multi"
+        app:layout_constraintVertical_bias="0.046" />
 
     <EditText
         android:id="@+id/num4"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="37dp"
         android:ems="10"
         android:hint="Numero Fibonacci"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintEnd_toStartOf="@+id/fibo"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintTop_toBottomOf="@+id/num3"
+        app:layout_constraintVertical_bias="0.033" />
 
     <Button
         android:id="@+id/fac"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="24dp"
         android:onClick="factorial"
         android:text="Factorial"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
+        app:layout_constraintTop_toBottomOf="@+id/dividir"
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
         android:id="@+id/fibo"
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="15dp"
         android:onClick="fibonacci"
         android:text="Fibonacci"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintTop_toBottomOf="@+id/fac"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="115dp"
+        android:layout_height="67dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/btnPotencia"
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="76dp"
         android:text="El resultado es: "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPotencia"
+        app:layout_constraintVertical_bias="0.142" />
 
-    <TextView
-        android:id="@+id/res"
-        android:layout_width="100dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="31dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    <Button
+        android:id="@+id/btnPotencia"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:onClick="calcularPotencia"
+        android:text="Potencia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintTop_toBottomOf="@+id/num4"
+        app:layout_constraintVertical_bias="0.155" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
