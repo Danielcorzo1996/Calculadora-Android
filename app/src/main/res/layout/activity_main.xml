@@ -55,7 +55,7 @@
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="133dp"
         android:layout_height="60dp"
-        android:onClick="sumar"
+        android:onClick="calcularPotencia"
         android:text="Sumar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -173,29 +173,14 @@
 
     <TextView
         android:id="@+id/res"
-        android:layout_width="115dp"
-        android:layout_height="67dp"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/btnPotencia"
-        app:layout_constraintVertical_bias="0.068" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="155dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="76dp"
-        android:text="El resultado es: "
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPotencia"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/btnPotencia"
@@ -207,8 +192,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num4"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintVertical_bias="0.048" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
